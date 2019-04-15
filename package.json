@@ -12,10 +12,10 @@
   },
   "devDependencies": {
     "jsdom": "^9.9.1",
+    "mini-css-extract-plugin": "^0.6.0",
     "mocha": "^5.2.0",
     "react-scripts": "^2.1.8",
     "react-test-renderer": "^15.5.4",
-    "webpack": "^3.9.0",
     "webpack-dev-server": "^2.9.0"
   },
   "dependencies": {
@@ -31,7 +31,8 @@
     "react": "^16.4.1",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^16.4.1",
-    "sinon": "^6.1.4"
+    "sinon": "^6.1.4",
+    "webpack": "^4.30.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,5 +41,11 @@
     "dev:hot": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cached --content-base ./",
     "test:watch": "npm run test -- --watch",
     "eject": "react-scripts eject"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
